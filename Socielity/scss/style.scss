@@ -1,0 +1,243 @@
+/* ============================ GLOBAL ==============================*/
+
+html,
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #666666;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 1470px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 114px;
+}
+
+.main{
+  &__trust {}
+}
+
+.trust {}
+
+.footer {}
+
+.button {
+  width: 170px;
+  height: 50px;
+  padding: 13px 34px;
+  background: #4579CB;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.logo {
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+  .text {
+    text-align: center;
+    width: 828px / 1440px * 100%;
+    margin: 0 auto;
+  }
+
+/*=========================== HEADER ===================================*/
+
+.header {
+
+  background: url("../images/background/header.svg") 100% -325% no-repeat;
+
+  // .header__top
+
+  &__top {}
+
+  // .header__top-inner
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 136px 0px 140px;
+    font-weight: 700;
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  // .header__nav
+
+  &__nav {}
+
+  // .header__nav-list
+
+  &__nav-list {
+    display: flex;
+  }
+
+  // .header__nav-item
+
+  &__nav-item {
+    margin-right: 40px;
+    transition: all .3s;
+
+    &:first-child {
+      margin-right: 60px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      color: #4579CB;
+    }
+  }
+
+  // .header__nav-link
+
+  &__nav-link {}
+
+  // .header__top-btn
+
+  &__top-btn {
+    margin-left: 36px;
+  }
+
+  /*-----------------------------------------*/
+
+  // .header__body
+
+  &__body {
+    margin-top: 125px;
+  }
+
+  &__body-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__body-title
+
+  &__body-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 1046px / 1440px * 100%;
+
+    & span {
+      color: #4579CB;
+    }
+  }
+
+  // .header__body-text
+
+  &__body-text {
+    margin: 38px 0;
+    text-align: center;
+    width: 828px / 1440px * 100%;
+  }
+
+  // .header__body-btn
+
+  &__body-btn {}
+
+  // .header__body-link
+
+  &__body-link {
+    margin-top: 21px;
+    display: flex;
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+
+    &:hover .header__link-text {
+      color: #4579CB;
+    }
+  }
+
+  &__link {
+    &-icon {
+      margin-right: 11px;
+      transition: all .5s;
+    }
+    &-text {
+      text-decoration: underline;
+      transition: all .5s;
+    }
+  }
+
+}
+
+/*=============================== TRUST ============================*/
+
+.trust {
+
+  // .trust__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  // .trust__text
+
+  &__text {
+    margin: 20px auto 46px;
+  }
+
+  // .trust__slider
+
+  &__slider {
+  }
+}
+
+.slider {
+
+  // .slider__logos
+
+  &__logos {
+    display: flex;
+  }
+
+  // .slider__logo
+
+  &__logo {
+  }
+
+  // .slider__dots
+
+  &__dots {
+  }
+}
