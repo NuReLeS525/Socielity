@@ -1,0 +1,35 @@
+@import 'vars';
+
+%slider__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .slick-dots {
+    height: 20px;
+  }
+
+  li {
+    background-color: $white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 9px;
+    transition: all .3s;
+    
+    &.slick-active {
+      width: 20px;
+      height: 20px;
+      background-color: $blue;
+      transition: all .3s;
+    }
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  button {
+    font-size: 0;
+  }
+}
