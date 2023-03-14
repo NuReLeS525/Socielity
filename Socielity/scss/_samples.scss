@@ -33,3 +33,31 @@
     font-size: 0;
   }
 }
+
+%title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 48px;
+  text-align: center;
+  color: $grey;
+}
+
+%text {
+  text-align: center;
+  width: 828px / 1440px * 100%;
+}
+
+%button {
+  width: 170px;
+  height: 50px;
+  padding: 13px 34px;
+  background: #4579CB;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

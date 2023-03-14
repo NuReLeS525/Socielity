@@ -7,5 +7,13 @@ $(function() {
     dots: true,
     appendDots: $('.slider__dots'),
   })
+  
+  $('.team__slider').slick({
+    arrows: true,
+    appendArrows: $('.team__arrows'),
+    slidesToShow: 1,
+    draggable: false,
+    dots: false,
+  })
 
 })

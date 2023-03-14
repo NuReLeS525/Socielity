@@ -33,3 +33,18 @@
     transition: all .3s;
   }
 }
+
+@mixin button($w: 170px, $h: 50px) {
+  width: $w;
+  height: $h;
+  padding: 13px 34px;
+  background: #4579CB;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
