@@ -49,6 +49,8 @@ body {
 
 .main__video {}
 
+.main__questions {}
+
 .footer {}
 
 .button {
@@ -404,52 +406,142 @@ body {
 }
 
 .arrow {
-    width: 70px;
-    height: 40px;
+  width: 70px;
+  height: 40px;
 
   @include button($w: 70px, $h: 40px);
   font-size: 0;
 }
 
-  .arrow__prev {
-    margin-right: 30px;
-    position: relative;
+.arrow__prev {
+  margin-right: 30px;
+  position: relative;
 
-    & .bg {
-      position: absolute;
-      top: 25%;
-      left: 40%;
-    }
+  & .bg {
+    position: absolute;
+    top: 25%;
+    left: 40%;
   }
+}
 
-  .arrow__sub {
-    position: relative;
+.arrow__sub {
+  position: relative;
 
-    & .bg {
-      position: absolute;
-      top: 25%;
-      right: 40%;
-    }
+  & .bg {
+    position: absolute;
+    top: 25%;
+    right: 40%;
   }
+}
 
 /* ============================== VIDEO ============================= */
 /* ============================== VIDEO ============================= */
 
 .video {
+  margin-top: 120px;
 }
+
 .video__title {
   @extend %title;
 }
+
 .video__text {
   @extend %text;
-  margin: 24px auto 59px;
+  margin: 24px auto 31px;
 }
 
 .video__videos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .video__vid {
   display: block;
+  position: relative;
+}
+
+.vid__text {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+}
+
+.vid__comment {
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  width: 120px;
+}
+
+.vid__socielity {
+  line-height: 32px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  margin-top: 9px;
+}
+
+/* ==================================== QUESTIONS =========================== */
+/* ==================================== QUESTIONS =========================== */
+
+.questions {}
+
+.questions__title {
+  @extend %title;
+}
+
+.questions__text {
+  @extend %text;
+  margin: 24px auto 52px;
+}
+
+.questions__acc {
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(2, auto);
+  grid-gap: 33px 30px;
+  justify-content: center;
+}
+
+.questions__acc-item {
+  width: 570px;
+  height: 70px;
+  border: 1px solid #CACACA;
+  border-radius: 10px;
+}
+
+.questions__acc-link {
+  display: block;
+  height: 100%;
+}
+
+.questions__acc-head {
+  color: #8C8C8C;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  & span {
+    margin-left: 27px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/Vector.svg");
+    width: 16px;
+    height: 9px;
+    top: 45%;
+    right: 0%;
+    margin-right: 32px;
+  }
+}
+
+.quesitons__acc-text {
+
 }
