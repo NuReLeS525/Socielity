@@ -47,6 +47,8 @@ body {
 
 .main__team {}
 
+.main__video {}
+
 .footer {}
 
 .button {
@@ -350,11 +352,14 @@ body {
 /* ============================== TEAM ============================= */
 /* ============================== TEAM ============================= */
 
-.team {}
+.team {
+  margin-top: 120px;
+}
 
 .team__inner {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .team__image-box {
@@ -398,15 +403,15 @@ body {
   margin-top: 34px;
 }
 
-.slick-arrow {
-  // width: 70px;
-  // height: 40px;
+.arrow {
+    width: 70px;
+    height: 40px;
 
   @include button($w: 70px, $h: 40px);
   font-size: 0;
 }
 
-  .slick-prev {
+  .arrow__prev {
     margin-right: 30px;
     position: relative;
 
@@ -417,7 +422,7 @@ body {
     }
   }
 
-  .slick-next {
+  .arrow__sub {
     position: relative;
 
     & .bg {
@@ -426,3 +431,25 @@ body {
       right: 40%;
     }
   }
+
+/* ============================== VIDEO ============================= */
+/* ============================== VIDEO ============================= */
+
+.video {
+}
+.video__title {
+  @extend %title;
+}
+.video__text {
+  @extend %text;
+  margin: 24px auto 59px;
+}
+
+.video__videos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video__vid {
+  display: block;
+}

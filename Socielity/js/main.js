@@ -9,11 +9,19 @@ $(function() {
   })
   
   $('.team__slider').slick({
-    arrows: true,
-    appendArrows: $('.team__arrows'),
     slidesToShow: 1,
     draggable: false,
     dots: false,
-  })
+    infinite: false,
+    arrows: false,
+    })
+    $('.arrow__prev').on('click', function(e) {
+      e.preventDefault()
+      $('.team__slider').slick('slickPrev')
+    })
+    $('.arrow__sub').on('click', function(e) {
+      e.preventDefault()
+      $('.team__slider').slick('slickNext')
+    })
 
 })

@@ -1,4 +1,4 @@
-.why__title, .explore__content-title {
+.video__title, .why__title, .explore__content-title {
   font-weight: 700;
   font-size: 26px;
   line-height: 48px;
@@ -6,7 +6,7 @@
   color: #666666;
 }
 
-.why__text, .trust__text, .header__body-text {
+.video__text, .why__text, .trust__text, .header__body-text {
   text-align: center;
   width: 57.5%;
 }
@@ -358,6 +358,10 @@ body {
 
 /* ============================== TEAM ============================= */
 /* ============================== TEAM ============================= */
+.team {
+  margin-top: 120px;
+}
+
 .team__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +369,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .team__image-box {
@@ -406,7 +413,9 @@ body {
   margin-top: 34px;
 }
 
-.slick-arrow {
+.arrow {
+  width: 70px;
+  height: 40px;
   width: 70px;
   height: 40px;
   padding: 13px 34px;
@@ -419,27 +428,46 @@ body {
   transition: all 0.5s;
   font-size: 0;
 }
-.slick-arrow:hover {
+.arrow:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.slick-prev {
+.arrow__prev {
   margin-right: 30px;
   position: relative;
 }
-.slick-prev .bg {
+.arrow__prev .bg {
   position: absolute;
   top: 25%;
   left: 40%;
 }
 
-.slick-next {
+.arrow__sub {
   position: relative;
 }
-.slick-next .bg {
+.arrow__sub .bg {
   position: absolute;
   top: 25%;
   right: 40%;
+}
+
+/* ============================== VIDEO ============================= */
+/* ============================== VIDEO ============================= */
+.video__text {
+  margin: 24px auto 59px;
+}
+
+.video__videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.video__vid {
+  display: block;
 }
