@@ -5,7 +5,7 @@ $(function() {
     slidesToShow: 1,
     draggable: true,
     dots: true,
-    appendDots: $('.slider__dots'),
+    appendDots: $('.trust__slider-dots'),
   })
   
   $('.team__slider').slick({
@@ -36,5 +36,13 @@ $(function() {
         $(this).addClass('questions__acc-link--active')
         $(this).children('.questions__acc-text').slideDown()
       }
+    })
+
+    $('.award__slider').slick({
+      arrows: false,
+      slidesToShow: 1,
+      draggable: true,
+      dots: true,
+      appendDots: $('.award__slider-dots'),
     })
 })

@@ -51,6 +51,8 @@ body {
 
 .main__questions {}
 
+.main__award {}
+
 .footer {}
 
 .button {
@@ -235,7 +237,7 @@ body {
   }
 }
 
-.slider__dots {
+.trust__slider-dots {
   @include slider__dots;
   margin-top: 23px;
 }
@@ -498,36 +500,42 @@ body {
 }
 
 .questions__acc {
-  display: grid;
-  grid-template: repeat(4, auto) / repeat(2, auto);
-  grid-gap: 33px 30px;
+  display: flex;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
+}
+
+.question__acc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
 }
 
 .questions__acc-item {
-  width: 570px;
-  height: 70px;
   border: 1px solid #CACACA;
   border-radius: 10px;
+  width: 570px;
 }
 
 .questions__acc-link {
   display: block;
   height: 100%;
+  padding: 23px 32px 23px 27px;
+}
+
+.questions__acc-link--active .questions__acc-head::after {
+  transform: rotate(90deg);
 }
 
 .questions__acc-head {
   color: #8C8C8C;
   text-align: center;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
 
-  & span {
-    margin-left: 27px;
-  }
+  & span {}
 
   &::after {
     content: "";
@@ -538,10 +546,68 @@ body {
     height: 9px;
     top: 45%;
     right: 0%;
-    margin-right: 32px;
+    transform: rotate(0deg);
+    transition: all .3s;
   }
 }
 
-.quesitons__acc-text {
+.questions__acc-text {
+  display: block;
+  margin-top: 23px;
+}
 
+/* ================================ AWARD ================================= */
+/* ================================ AWARD ================================= */
+
+.award {}
+
+.award__title {
+  @extend %title;
+}
+
+.award__text {
+  @extend %text;
+  margin: 24px auto 42px auto;
+}
+
+.award__slider {
+}
+
+.award__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award__slide-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 20px 15px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  width: 170px;
+}
+
+.award__image-box {}
+
+.award__year {
+  color: $blue;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 9px 0 9px;
+}
+
+.award__desc {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  width: 141px;
+}
+
+.award__slider-dots {
+  @include slider__dots;
 }
