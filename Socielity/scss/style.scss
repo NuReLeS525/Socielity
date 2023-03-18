@@ -22,8 +22,7 @@ body {
 }
 
 .container {
-  max-width: 1470px;
-  padding: 0px 15px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -53,7 +52,8 @@ body {
 
 .main__award {}
 
-.footer {}
+.main__subscribe {}
+
 
 .button {
   width: 170px;
@@ -64,6 +64,7 @@ body {
   font-weight: 700;
   border-radius: 8px;
   transition: all .5s;
+  white-space: nowrap;
 
   &:hover {
     transform: scale(1.05);
@@ -559,7 +560,9 @@ body {
 /* ================================ AWARD ================================= */
 /* ================================ AWARD ================================= */
 
-.award {}
+.award {
+  margin-top: 120px;
+}
 
 .award__title {
   @extend %title;
@@ -570,13 +573,11 @@ body {
   margin: 24px auto 42px auto;
 }
 
-.award__slider {
-}
+.award__slider {}
 
-.award__slide {
+.slick-initialized .slick-slide {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .award__slide-item {
@@ -611,3 +612,141 @@ body {
 .award__slider-dots {
   @include slider__dots;
 }
+
+/* ========================== SUBSCRIBE ========================== */
+/* ========================== SUBSCRIBE ========================== */
+
+
+.subscribe {
+  margin: 120px auto 80px;
+}
+
+.subscribe__title {
+  @extend %title;
+}
+
+.subscribe__text {
+  @extend %text;
+  margin: 24px auto 33px auto;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 770px;
+  height: 80px;
+  background: #E6E6E6;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.subscribe__form-input {
+  padding-left: 34px;
+  font-size: 20px;
+  line-height: 28px;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.subscribe__form-btn {
+  @include button();
+  margin-right: 19px;
+  padding: 0;
+}
+
+/* =============================== FOOTER ==================== */
+/* =============================== FOOTER ==================== */
+
+.footer {
+  background-color: $blue;
+  padding-top: 44px;
+  padding-bottom: 40px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.footer__column {
+  max-width: 290px;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 31px;
+}
+
+.footer__text {
+}
+
+.footer__title {
+  @extend %title;
+  text-align: start;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 31px;
+}
+
+.footer__list {
+  font-size: 14px;
+}
+
+.footer__list-item {
+  margin-bottom: 8px;
+}
+
+.footer__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.footer__list-link {
+  transition: all .3s;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer__contacts-list {
+  margin-bottom: 30px;
+
+  & svg {
+    margin-right: 18px;
+  }
+
+  & .footer__list-link path {
+    transition: all .3s;
+  }
+
+  & .footer__list-link:hover path {
+    fill: $white;
+  }
+}
+
+.footer__socials-list {
+  display: flex;
+}
+
+.footer__socials-item {
+  margin-right: 18px;
+}
+
+.footer__socials-link {
+  & path {
+    transition: all .3s;
+  }
+
+  &:hover path {
+    fill: #fff;
+  }
+}
+
+/* =============================== MEDIA ============================== */
+/* =============================== MEDIA ============================== */
+
+@import "media";
