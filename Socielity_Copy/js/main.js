@@ -4,7 +4,7 @@ $(function() {
     arrows: false,
     slidesToShow: 6,
     draggable: true,
-    dots: false,
+    dots: true,
     appendDots: $('.trust__slider-dots'),
     // responsive:
     // [
