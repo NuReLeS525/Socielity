@@ -6,6 +6,15 @@ $(function() {
     draggable: true,
     dots: true,
     appendDots: $('.trust__slider-dots'),
+    // responsive:
+    // [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    // ]
   })
   
   $('.team__slider').slick({
@@ -44,5 +53,20 @@ $(function() {
       draggable: true,
       dots: true,
       appendDots: $('.award__slider-dots'),
+    })
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false   ) {
+        $('.burger').addClass('burger--follow')
+      } else {
+        $('.burger').removeClass('burger--follow')
+      }
+    })
+
+    $('.burger, .overlay, .header__top').on('click', function(e) {
+      e.preventDefault()
+      $('.header__top').toggleClass('header__top--open')
+      $('.overlay').toggleClass('overlay--show')
+      $('.burger').toggleClass('burger--cross')
     })
 })

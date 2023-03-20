@@ -21,6 +21,28 @@ body {
   overflow: hidden;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.315);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.burger {
+  display: none;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -64,7 +86,7 @@ body {
   font-weight: 700;
   border-radius: 8px;
   transition: all .5s;
-  white-space: nowrap;
+  // white-space: nowrap;
 
   &:hover {
     transform: scale(1.05);
@@ -115,7 +137,7 @@ body {
   // .header__nav-item
 
   &__nav-item {
-    margin-right: 40px;
+    margin-right: 40px; 
     transition: all .3s;
 
     &:first-child {
