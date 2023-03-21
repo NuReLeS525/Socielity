@@ -4,17 +4,38 @@ $(function() {
     arrows: false,
     slidesToShow: 6,
     draggable: true,
+    waitForAnimate: false,
     dots: true,
     appendDots: $('.trust__slider-dots'),
-    // responsive:
-    // [
-    //   {
-    //     breakpoint: 1200,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ]
+    responsive:
+    [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+        },
+      },
+    ]
   })
   
   $('.team__slider').slick({
