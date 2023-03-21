@@ -19,6 +19,8 @@ $(function() {
         breakpoint: 768,
         settings: {
           slidesToShow: 4,
+          vertical: true,
+          verticalSwiping: true,
         },
       },
       {
@@ -26,6 +28,9 @@ $(function() {
         settings: {
           slidesToShow: 3,
           dots: false,
+          vertical: true,
+          verticalSwiping: true,
+          draggable: true,
         },
       },
       {
@@ -33,6 +38,9 @@ $(function() {
         settings: {
           slidesToShow: 2,
           dots: false,
+          vertical: true,
+          verticalSwiping: true,
+          draggable: true,
         },
       },
     ]

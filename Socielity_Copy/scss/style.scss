@@ -254,11 +254,17 @@ body {
   }
 
   &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .slick-initialized .slick-slide {
       justify-content: center;
+      align-items: center;
     }
 
     & img {
+      margin: 0 auto;
       height: auto;
       width: auto;
     }
@@ -391,7 +397,7 @@ body {
 .team__inner {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .team__image-box {
