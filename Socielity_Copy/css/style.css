@@ -438,7 +438,7 @@ body {
 
 .team__slider {
   max-width: 547px;
-  max-height: 143px;
+  height: 143px;
 }
 
 .team__slide-text {
@@ -634,6 +634,15 @@ body {
   margin: 24px auto 42px auto;
 }
 
+.award__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .slick-initialized .slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,6 +670,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 16px;
   width: 170px;
+  min-height: 238px;
 }
 
 .award__year {
@@ -739,8 +749,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 770px;
-  height: 80px;
+  max-width: 770px;
+  min-height: 80px;
   background: #E6E6E6;
   border-radius: 16px;
   margin: 0 auto;
@@ -796,6 +806,20 @@ body {
 
 .footer__column {
   max-width: 290px;
+}
+
+.footer__slide-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 300px;
 }
 
 .footer__logo {
@@ -1022,6 +1046,11 @@ body {
   .team__image-box {
     margin-right: 30px;
   }
+  /* ----------------------------------------- */
+  .video__vid img {
+    width: 600px;
+  }
+  /* ----------------------------------------- */
 }
 /* ========================= 922 =========================== */
 @media (max-width: 922px) {
@@ -1040,9 +1069,6 @@ body {
     margin-right: 25px;
   }
   /* ----------------------------------------- */
-  .why {
-    height: 1700px;
-  }
   .why__table {
     grid-template: repeat(3, 293.33px)/repeat(3, 293.33px);
     height: 842.42px;
@@ -1056,6 +1082,37 @@ body {
   }
   .team__image-box {
     margin: 0 0 20px;
+  }
+  /* ----------------------------------------- */
+  .video__vid img {
+    width: 450px;
+  }
+  .vid__text {
+    top: 40%;
+  }
+  .vid__comment {
+    font-size: 20px;
+  }
+  .vid__socielity {
+    font-size: 20px;
+  }
+  /* ----------------------------------------- */
+  .questions__acc-item {
+    width: 410px;
+  }
+  /* ----------------------------------------- */
+  .footer .container {
+    padding: 0 15px;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .footer__column {
+    width: 100%;
   }
 }
 /* ========================= 768 =========================== */
@@ -1089,6 +1146,9 @@ body {
     margin: 30px auto;
   }
   /* ----------------------------------------- */
+  .why {
+    height: 1700px;
+  }
   .why__table {
     grid-template: repeat(4, 354px)/repeat(2, 354px);
     margin: 0 auto;
@@ -1101,6 +1161,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  /* ----------------------------------------- */
+  .video__videos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video__vid img {
+    width: 550px;
+  }
+  /* ----------------------------------------- */
+  .questions__acc-item {
+    width: 325px;
+  }
+  /* ----------------------------------------- */
+  .subscribe__form {
+    max-width: 680px;
   }
 }
 /* ========================= 480 =========================== */
@@ -1186,6 +1264,18 @@ body {
   .slick-initialized .team__slide-text {
     width: 430px;
   }
+  /* ----------------------------------------- */
+  .video__vid img {
+    width: 400px;
+  }
+  /* ----------------------------------------- */
+  .questions__acc-item {
+    width: 190px;
+  }
+  /* ----------------------------------------- */
+  .container {
+    padding: 0 10px;
+  }
 }
 /* ========================= 320 =========================== */
 @media (max-width: 320px) {
@@ -1196,7 +1286,7 @@ body {
     margin: 15px auto;
   }
   .explore .container {
-    padding: 0 5px;
+    padding: 0 10px;
   }
   /* ------------------------------------------------- */
   .why__table {
@@ -1208,9 +1298,58 @@ body {
   }
   /* ------------------------------------------------- */
   .slick-initialized {
-    height: auto;
+    height: 300px;
   }
   .slick-initialized .team__slide-text {
     width: 290px;
+  }
+  /* ------------------------------------------------- */
+  .video__vid img {
+    width: 250px;
+  }
+  .vid__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 100px;
+  }
+  .vid__comment {
+    font-size: 10px;
+    height: 13px;
+  }
+  .vid__socielity {
+    margin-top: 0px;
+    font-size: 10px;
+    height: 13px;
+  }
+  /* ------------------------------------------------- */
+  .questions__acc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions__acc-item {
+    width: 250px;
+  }
+  /* ------------------------------------------------- */
+  .subscribe__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+  }
+  .subscribe__form-input {
+    background: #E6E6E6;
+    height: 80px;
+    padding: 0 10px;
+  }
+  .subscribe__form-btn {
+    margin: 20px 0;
   }
 }

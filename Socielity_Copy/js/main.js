@@ -78,10 +78,40 @@ $(function() {
 
     $('.award__slider').slick({
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 7,
       draggable: true,
       dots: true,
+      waitForAnimate: false,
       appendDots: $('.award__slider-dots'),
+      responsive:
+      [
+        {
+          breakpoint: 922,
+          settings: {
+            slidesToShow: 6,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 2,
+            dots: false,
+          }
+        },
+      ]
     })
 
     $(window).on('scroll', function () {

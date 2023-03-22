@@ -133,10 +133,19 @@
   }
 
   /* ----------------------------------------- */
-
+  
   .team__image-box {
     margin-right: 30px;
   }
+
+  /* ----------------------------------------- */
+  
+  .video__vid img {
+    width: 600px;
+  }
+
+  /* ----------------------------------------- */
+
 }
 
 /* ========================= 922 =========================== */
@@ -164,7 +173,7 @@
   /* ----------------------------------------- */
   
   .why {
-    height: 1700px;
+    // height: 1700px;
   }
 
   .why__table {
@@ -173,13 +182,55 @@
   }
   
   /* ----------------------------------------- */
-
+  
   .team__inner {
     flex-direction: column;
   }
-
+  
   .team__image-box {
     margin: 0 0 20px;
+  }
+
+  /* ----------------------------------------- */
+
+  .video__vid img {
+    width: 450px;
+  }
+
+  .vid__text {
+    top: 40%;
+  }
+
+  .vid__comment {
+    font-size: 20px;
+  }
+
+  .vid__socielity {
+    font-size: 20px;
+  }
+
+  /* ----------------------------------------- */
+  
+  .questions__acc-item {
+    width: 410px;
+  }
+  
+  /* ----------------------------------------- */
+
+  .footer .container {
+    padding: 0 15px;  
+  }
+  
+  .footer__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__column {
+    width: 100%;
+  }
+
+  .footer__text {
   }
 }
 
@@ -220,16 +271,42 @@
 
   /* ----------------------------------------- */
   
+  .why {
+    height: 1700px;
+  }
+
   .why__table {
     grid-template: repeat(4, 354px) / repeat(2, 354px);
     margin: 0 auto;
   }
 
   /* ----------------------------------------- */
-
+  
   .team__inner {
     justify-content: center;
     align-items: center;
+  }
+
+  /* ----------------------------------------- */
+  
+  .video__videos {
+    flex-direction: column;
+  }
+  
+  .video__vid img {
+    width: 550px;
+  }
+
+  /* ----------------------------------------- */
+  
+  .questions__acc-item {
+    width: 325px;
+  }
+
+  /* ----------------------------------------- */
+
+  .subscribe__form {
+    max-width: 680px;
   }
 }
 
@@ -295,7 +372,7 @@
   }
 
   /* ----------------------------------------- */
-
+  
   .team {
     margin-top: 60px;
 
@@ -325,6 +402,24 @@
       width: 430px;
     }
   }
+
+  /* ----------------------------------------- */
+  
+  .video__vid img {
+    width: 400px;
+  }
+
+  /* ----------------------------------------- */
+  
+  .questions__acc-item {
+    width: 190px;
+  }
+
+  /* ----------------------------------------- */
+
+  .container {
+    padding: 0 10px;
+  }
 }
 
 /* ========================= 320 =========================== */
@@ -340,7 +435,7 @@
 
   .explore {
     & .container {
-      padding: 0 5px;
+      padding: 0 10px;
     }
   }
 
@@ -356,13 +451,65 @@
   }
 
   /* ------------------------------------------------- */
-
+  
   .slick-initialized {
-    height: auto;
+    height: 300px;
 
     .team__slide-text {
       width: 290px;
     }
   }
 
+  .team__arrows {
+  }
+  
+  /* ------------------------------------------------- */
+  
+  .video__vid img {
+    width: 250px;
+  }
+
+  .vid__text {
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+  }
+
+  .vid__comment {
+    font-size: 10px;
+    height: 13px;
+  }
+  
+  .vid__socielity {
+    margin-top: 0px;
+    font-size: 10px;
+    height: 13px;
+  }
+
+  /* ------------------------------------------------- */
+  
+  .questions__acc {
+    flex-direction: column;
+  }
+  
+  .questions__acc-item {
+    width: 250px;
+  }
+
+  /* ------------------------------------------------- */
+
+  .subscribe__form {
+    flex-direction: column;
+    background: none;
+
+    &-input {
+      background: #E6E6E6;
+      height: 80px;
+      padding: 0 10px;
+    }
+
+    &-btn {
+      margin: 20px 0;
+    }
+  }
 }
