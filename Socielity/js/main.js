@@ -2,19 +2,49 @@ $(function() {
   
   $('.trust__slider').slick({
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 6,
     draggable: true,
+    waitForAnimate: false,
     dots: true,
+    infinite: true,
     appendDots: $('.trust__slider-dots'),
-    // responsive:
-    // [
-    //   {
-    //     breakpoint: 1200,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ]
+    responsive:
+    [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          vertical: true,
+          verticalSwiping: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          dots: false,
+          vertical: true,
+          verticalSwiping: true,
+          draggable: true,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+          vertical: true,
+          verticalSwiping: true,
+          draggable: true,
+        },
+      },
+    ]
   })
   
   $('.team__slider').slick({
@@ -49,10 +79,41 @@ $(function() {
 
     $('.award__slider').slick({
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 7,
       draggable: true,
       dots: true,
+      waitForAnimate: false,
+      infinite: true,
       appendDots: $('.award__slider-dots'),
+      responsive:
+      [
+        {
+          breakpoint: 922,
+          settings: {
+            slidesToShow: 6,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 2,
+            dots: false,
+          }
+        },
+      ]
     })
 
     $(window).on('scroll', function () {
@@ -68,5 +129,9 @@ $(function() {
       $('.header__top').toggleClass('header__top--open')
       $('.overlay').toggleClass('overlay--show')
       $('.burger').toggleClass('burger--cross')
+    })
+
+    $('.footer__title--slide').on('click', function() {
+      $(this).next().slideToggle('')
     })
 })
