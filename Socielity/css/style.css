@@ -55,6 +55,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -312,6 +313,12 @@ body {
 
 .explore__image-box {
   margin-right: 90px;
+  max-width: 456.41px;
+  max-height: 437.3px;
+}
+.explore__image-box img {
+  width: 100%;
+  height: 100%;
 }
 
 .explore__content {
@@ -325,7 +332,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 558px;
+  max-width: 558px;
   height: 306px;
 }
 
@@ -333,6 +340,9 @@ body {
 /* ============================== WHY ============================= */
 .why {
   margin-top: 120px;
+}
+.why .container {
+  padding: 0 10px;
 }
 
 .why__title {
@@ -347,8 +357,8 @@ body {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
   gap: 30px;
-  width: 1170px;
-  height: 564px;
+  max-width: 1170px;
+  max-height: 2000px;
   margin: 0 auto;
 }
 
@@ -368,7 +378,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 31px;
+  padding: 30px 0;
 }
 
 .why__element-icon {
@@ -394,7 +404,7 @@ body {
 .why__element-text {
   text-align: center;
   height: 50%;
-  margin: 0px 23px 0px 11px;
+  margin: 0px 10px;
 }
 
 /* ============================== TEAM ============================= */
@@ -417,6 +427,12 @@ body {
 
 .team__image-box {
   margin-right: 110px;
+  max-width: 592.58px;
+  max-height: 420px;
+}
+.team__image-box img {
+  width: 100%;
+  height: 100%;
 }
 
 .team__person {
@@ -438,7 +454,7 @@ body {
 
 .team__slider {
   max-width: 547px;
-  height: 143px;
+  height: auto;
 }
 
 .team__slide-text {
@@ -455,8 +471,6 @@ body {
 }
 
 .arrow {
-  width: 70px;
-  height: 40px;
   width: 70px;
   height: 40px;
   padding: 13px 34px;
@@ -519,27 +533,29 @@ body {
 .video__vid {
   display: block;
   position: relative;
+  max-width: 600px;
+  max-height: 396.91px;
+}
+.video__vid img {
+  width: 100%;
+  height: 100%;
 }
 
 .vid__text {
   position: absolute;
   top: 57%;
   left: 10%;
-}
-
-.vid__comment {
-  line-height: 36px;
+  line-height: 106%;
   font-weight: 700;
   font-size: 26px;
   color: #fff;
+}
+
+.vid__comment {
   width: 120px;
 }
 
 .vid__socielity {
-  line-height: 32px;
-  font-weight: 700;
-  font-size: 26px;
-  color: #fff;
   margin-top: 9px;
 }
 
@@ -562,7 +578,7 @@ body {
           align-items: center;
 }
 
-.question__acc-list {
+.questions__acc-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,7 +592,7 @@ body {
 .questions__acc-item {
   border: 1px solid #CACACA;
   border-radius: 10px;
-  width: 570px;
+  width: 45vw;
 }
 
 .questions__acc-link {
@@ -610,7 +626,7 @@ body {
   width: 16px;
   height: 9px;
   top: 45%;
-  right: 0%;
+  left: 100%;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -669,8 +685,16 @@ body {
   padding: 15px 15px 20px 15px;
   background-color: #FFFFFF;
   border-radius: 16px;
-  width: 170px;
+  max-width: 170px;
   min-height: 238px;
+}
+
+.award__slide-text {
+  height: 50%;
+}
+
+.award__image-box {
+  margin: auto 0;
 }
 
 .award__year {
@@ -1044,18 +1068,19 @@ body {
   }
   /* ----------------------------------------- */
   .why__table {
-    grid-template: repeat(2, 275px)/repeat(4, 275px);
+    grid-template: repeat(2, 1fr)/repeat(4, 1fr);
     gap: 15px;
   }
   /* ----------------------------------------- */
   .team__image-box {
     margin-right: 30px;
   }
-  /* ----------------------------------------- */
-  .video__vid img {
-    width: 600px;
+}
+/* ========================= 960 =========================== */
+@media (max-width: 960px) {
+  .why__table {
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
   }
-  /* ----------------------------------------- */
 }
 /* ========================= 922 =========================== */
 @media (max-width: 922px) {
@@ -1075,8 +1100,8 @@ body {
   }
   /* ----------------------------------------- */
   .why__table {
-    grid-template: repeat(3, 293.33px)/repeat(3, 293.33px);
-    height: 842.42px;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    height: auto;
   }
   /* ----------------------------------------- */
   .team__inner {
@@ -1089,9 +1114,6 @@ body {
     margin: 0 0 20px;
   }
   /* ----------------------------------------- */
-  .video__vid img {
-    width: 450px;
-  }
   .vid__text {
     top: 40%;
   }
@@ -1100,10 +1122,6 @@ body {
   }
   .vid__socielity {
     font-size: 20px;
-  }
-  /* ----------------------------------------- */
-  .questions__acc-item {
-    width: 410px;
   }
   /* ----------------------------------------- */
   .footer .container {
@@ -1134,16 +1152,23 @@ body {
   }
   /* ----------------------------------------- */
   .explore .container {
-    padding: 0 5px;
+    padding: 0 10px;
   }
   .explore__article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
   }
+  .explore__article--reverse .explore__content {
+    margin: 0;
+  }
   .explore__image-box {
-    display: none;
+    margin: 0 auto 30px;
   }
   .explore__content {
     -webkit-box-pack: center;
@@ -1154,12 +1179,8 @@ body {
     margin: 30px auto;
   }
   /* ----------------------------------------- */
-  .why {
-    height: 1700px;
-  }
   .why__table {
-    grid-template: repeat(4, 354px)/repeat(2, 354px);
-    margin: 0 auto;
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
   }
   /* ----------------------------------------- */
   .team__inner {
@@ -1177,16 +1198,68 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .video__vid img {
-    width: 550px;
-  }
   /* ----------------------------------------- */
-  .questions__acc-item {
-    width: 325px;
+  .questions__acc {
+    gap: 15px;
+  }
+  .questions__acc-list {
+    gap: 15px;
   }
   /* ----------------------------------------- */
   .subscribe__form {
     max-width: 680px;
+  }
+}
+/* ========================= 600 =========================== */
+@media (max-width: 600px) {
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__slide-text {
+    max-width: 570px;
+    margin: 0 auto;
+  }
+}
+/* ========================= 570 =========================== */
+@media (max-width: 570px) {
+  .why__table {
+    grid-template: repeat(8, 1fr)/1fr;
+  }
+  .why__table-element {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .team__slide-text {
+    max-width: 500px;
+  }
+}
+@media (max-width: 535px) {
+  .team__slide-text {
+    max-width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  .team__slide-text {
+    width: 300px;
+  }
+}
+@media (max-width: 345px) {
+  .team__slide-text {
+    width: 200px;
+  }
+}
+@media (max-width: 290px) {
+  .team__person {
+    width: 150px;
   }
 }
 /* ========================= 480 =========================== */
@@ -1206,12 +1279,6 @@ body {
   .explore {
     margin-top: 60px;
   }
-  .explore__article--reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .explore__article--reverse .explore__content {
     margin: 0;
   }
@@ -1224,30 +1291,12 @@ body {
     font-size: 20px;
   }
   /* ----------------------------------------- */
-  .why {
-    height: auto;
-  }
-  .why__table {
-    display: block;
-    height: 3760px;
-  }
-  .why__table-element {
-    width: 460px;
-    height: 460px;
-    margin-bottom: 10px;
-  }
-  .why__table-element:last-child {
-    margin-bottom: 0px;
-  }
   /* ----------------------------------------- */
   .team {
     margin-top: 60px;
   }
   .team .container {
     padding: 0 5px;
-  }
-  .team__image-box {
-    display: none;
   }
   .team__content {
     display: -webkit-box;
@@ -1269,16 +1318,25 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .slick-initialized .team__slide-text {
-    width: 430px;
+  .team__slide-text {
+    max-width: 400px;
   }
   /* ----------------------------------------- */
-  .video__vid img {
-    width: 400px;
-  }
   /* ----------------------------------------- */
+  .questions__acc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions__acc-list {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .questions__acc-item {
-    width: 190px;
+    width: 100%;
   }
   /* ----------------------------------------- */
   .container {
@@ -1290,6 +1348,23 @@ body {
   }
   .footer__column .footer__list {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+  .subscribe__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+  }
+  .subscribe__form-input {
+    background: #E6E6E6;
+    height: 80px;
+    padding: 0 10px;
+  }
+  .subscribe__form-btn {
+    margin: 20px 0;
   }
 }
 /* ========================= 320 =========================== */
@@ -1304,24 +1379,6 @@ body {
     padding: 0 10px;
   }
   /* ------------------------------------------------- */
-  .why__table {
-    height: 2480px;
-  }
-  .why__table-element {
-    width: 300px;
-    height: 300px;
-  }
-  /* ------------------------------------------------- */
-  .slick-initialized {
-    height: 300px;
-  }
-  .slick-initialized .team__slide-text {
-    width: 290px;
-  }
-  /* ------------------------------------------------- */
-  .video__vid img {
-    width: 250px;
-  }
   .vid__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1348,9 +1405,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .questions__acc-item {
-    width: 250px;
-  }
   /* ------------------------------------------------- */
   .subscribe__form {
     -webkit-box-orient: vertical;
@@ -1363,6 +1417,7 @@ body {
     background: #E6E6E6;
     height: 80px;
     padding: 0 10px;
+    font-size: 14px;
   }
   .subscribe__form-btn {
     margin: 20px 0;

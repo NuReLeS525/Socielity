@@ -94,22 +94,35 @@ $(function() {
           }
         },
         {
-          breakpoint: 768,
+          breakpoint: 840,
           settings: {
             slidesToShow: 5,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 555,
           settings: {
             slidesToShow: 3,
             dots: false,
           }
         },
         {
-          breakpoint: 320,
+          breakpoint: 430,
           settings: {
             slidesToShow: 2,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 300,
+          settings: {
+            slidesToShow: 1,
             dots: false,
           }
         },
